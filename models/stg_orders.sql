@@ -1,5 +1,5 @@
-orders as (
-
+with orders as (
+    
     select
         id as order_id,
         user_id as customer_id,
@@ -7,7 +7,6 @@ orders as (
         status
 
     from DBT_TRAINING_DB.jaffle_shop.orders
-
 )
 
 select * from orders
